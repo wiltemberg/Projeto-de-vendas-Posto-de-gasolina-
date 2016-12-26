@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela Principal</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	 <nav class="navbar navbar-inverse navbar-fixed-top">  
+ <div class="container-fluid">
+ <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<!-- <span class="sr-only">Toggle navigation</span> -->
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+		<a class="navbar-brand" href="*">PSJ - Postos Sempre Java</a>
+ </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="*">Inicio</a></li>
+    <li><a href="Tela_Menu.html">Menu</a></li>
+	  <li><a href="*"> Sair </a></li>
+    <li><a href="*"> -?- </a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+<br/>
+	<div id="main" class="container-fluid">
+		<h3 class="page-header">Tela inicial</h3>
+	</div>
+	
+	<h3>Bem vindo a tela principal do sistemas de vendas </h3>
+	
+	<!--esse aqui foi so uma ideia , pode ser uma tabela 
+	com os itens que forem escolhido pelo usuario 
+	ou aque la outra forma que esta fora do comentario,
+	nela nos podemos excluir os botoes visualizar e editar, 
+	ficando so o excluir. 
+	OBS: o ultimo esse que esta fora do comentario 
+	eu peguei como exemplo pois achei bem legal.
+	
+	
+	-->
+	<!-- /#main
+	<table border="1" class="table table-hover">
+  <thead>
+    <tr>
+      <th>Cod</th>
+      <th>Nomes dos produtos</th>
+      <th>Descricao do Produto</th>
+	  <th>Valor do Produto</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr>
+      <td>1</td>
+      <td>bebidas</td>
+      <td>para beber</td>
+	  <td>20</td>
+    </tr>
+    <tr>
+		<td>2</td>
+      <td>alimentos</td>
+      <td>salgado</td>
+	<td>10</td>
+    </tr>
+    <tr>
+		<td>3</td>
+      <td>outra coisa</td>
+      <td>----</td>
+      <td>30</td>
+    </tr>
+    </tbody>
+	</table>
+	
+	<div class="form-group col-md-3">
+   <label for="campo1">Valor da compra</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ <div class="form-group col-md-3">
+   <label for="campo2">cupom desconto</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+	<div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Efetuar compra</button>
+	  <button type="submit" class="btn btn-primary">Cancelar compra</button>	
+		</div>
+	</div>
+	 -->
+	<div id="top" class="row">
+    <div class="col-md-3">
+        <h2>Itens</h2>
+    </div>
+ 
+    <div class="col-md-6">
+        <div class="input-group h2">
+            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+ 
+    <div class="col-md-3">
+        <a href="Crud_Produto.html" class="btn btn-primary pull-right h2">Novo Item</a>
+    </div>
+</div> 
+
+<!-- area da lista  -->
+<div id="list" class="row">
+ 
+    <div class="table-responsive col-md-12">
+        <table class="table table-striped" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Descricao</th>
+                    <th>Valor</th>
+                    <th class="actions">Acoes</th>
+                 </tr>
+            </thead>
+            <tbody>
+ 
+                <tr>
+                    <td>1001</td>
+                    <td>alimento- x</td>
+                    <td>alimento</td>
+                    <td>R$15</td>
+                    <td class="actions">
+					<!--podemos alterar os bnt para que fique so o excluir-->
+                        <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
+                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                        <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                    </td>
+                </tr>
+ 
+            </tbody>
+         </table>
+ 
+     </div>
+ </div> 
+ 
+ 
+ <div class="form-group col-md-3">
+   <label for="campo1">Desconto cupom:</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ 
+ <div class="form-group col-md-3">
+   <label for="campo1">Valor da compra:</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Efetuar compra</button>
+		<!--o link, servirá para o usuário voltar para a tela inicial, podemos tamberm
+	criar um botao voltar e outro botao reset para limpar os campos-->
+	  <button type="reset" class="btn btn-primary">Cancelar compra</button>
+		</div>
+
+ </body>
+ 
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro de funcionario</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	<!-- isso pode ser opcional<nav class="navbar navbar-inverse navbar-fixed-top"> -->
+	<nav class="navbar navbar-inverse">
+ <div class="container-fluid">
+ <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+	<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+		<a class="navbar-brand" href="*">PSJ - Postos Sempre Java</a>
+ </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="*">Inicio</a></li>
+    <li><a href="Tela_Menu">Menu</a></li>
+    <li><a href="*"> Sair </a></li>
+    <li><a href="*"> -?- </a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+<br/>
+		
+	<div id="main" class="container-fluid">
+ <h3 class="page-header">Inserir Funcionario</h3>
+	<form action="index.html">
+	
+	
+  <!-- area de campos do formulario -->
+  <div class="row">
+ <div class="form-group col-md-1">
+   <label for="campo1">ID</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div class="form-group col-md-5">
+   <label for="campo2">Nome Funcionario</label>
+   <input type="text" class="form-control" id="campo2">
+ </div>
+ 
+ <div class="form-group col-md-3">
+   <label for="campo3">CPF</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ <div class="form-group col-md-3">
+   <label for="campo2">RG</label>
+   <input type="text" class="form-control" id="campo4">
+ </div>
+ <div class="form-group col-md-2">
+   <label for="campo2">Data de Nascimento</label>
+   <input type="date" class="form-control" id="campo5">
+ </div>
+ <div class="form-group col-md-3">
+   <label for="campo2">Setor de Atuacao</label>
+   <input type="text" class="form-control" id="campo6">
+ </div>
+</div>
+
+
+  <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Salvar Cadastro</button>
+	  
+		<!--o link, servirá para o usuário voltar para a tela inicial-->
+	<a href="index.html" class="btn btn-default">Cancelar cadastro</a>
+		</div>
+	</div>
+	</form>
+
+	
+	
+	
+ </body>
+ 
+</html>
